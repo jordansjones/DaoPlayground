@@ -42,7 +42,10 @@
     <option name="OPEN_IN_BROWSER" value="true" />
   </component>
   <component name="ProjectKey">
-    <option name="state" value="project://4cb30e82-591c-42ca-a490-e125332090a2" />
+    <option name="state" value="svn+ssh://util.nextmethod.info/srv/svn/DaoPlayground/trunk/.idea/misc.xml" />
+  </component>
+  <component name="ProjectResources">
+    <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
