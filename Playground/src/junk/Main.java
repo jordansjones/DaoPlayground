@@ -1,21 +1,25 @@
 package junk;
 
 import dao.Enumerable;
+import dao.context.DataContext;
+import dao.context.UserContext;
 import dao.entities.User;
 
+import static dao.context.DataContext.from;
 import static dao.expressions.Expressions.and;
 import static dao.expressions.Expressions.beginsWith;
 import static dao.expressions.Expressions.equalTo;
 import static dao.expressions.Expressions.notEqualTo;
 import static dao.expressions.Expressions.or;
-import static dao.context.DataContext.from;
 
 public class Main
 {
 
 	public static void main(String[] args)
 	{
-		final Enumerable<User> userEnumerable = from(User.class)
+        final UserContext context = from(User.class);
+
+        final Enumerable<User> userEnumerable = from(User.class)
 			.whereEmailAddress("jordansjones@gmail.com")
 			.or().whereEmailAddress("jordan.jones@quest.com")
 			.select(User.class);

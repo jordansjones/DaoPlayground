@@ -11,9 +11,9 @@
 			this.expressions = new java.util.ArrayList<dao.expressions.MethodCallExpression>();
 		}
 
-		@SuppressWarnings({"unchecked"})
 		public static <EC, CC> CC newInstance(final Class<EC> entityClass, final Class<CC> contextClass) {
-			return (CC) java.lang.reflect.Proxy.newProxyInstance(contextClass.getClassLoader(), new Class[]{contextClass}, new ContextFactory(entityClass, contextClass));
+		    final Object o = java.lang.reflect.Proxy.newProxyInstance(contextClass.getClassLoader(), new Class[]{contextClass}, new ContextFactory(entityClass, contextClass));
+			return contextClass.cast(o);
 		}
 
 		@Override
