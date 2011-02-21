@@ -37,6 +37,27 @@ public class Main
 //			.whereAddressState("UT")
 //			.select(User.class)
 //			.first();
+
+		final Column<String> column = new Column<String> ("first_name");
+
+		where (column, "Jordan");
+	}
+
+	private static <T> void where (final Column<T> col, final T val)
+	{
+
+	}
+
+
+	public static class Column<T>
+	{
+
+		private final String name;
+
+		public Column (final String name)
+		{
+			this.name = name;
+		}
 	}
 
 }
