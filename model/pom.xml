@@ -30,7 +30,8 @@
 				<version>2.3.2</version>
 				<configuration>
 					<annotationProcessors>
-						<annotationProcessor>dao.annotation.processors.ContextGenerator</annotationProcessor>
+						<annotationProcessor>com.nextmethod.dao.annotation.processors.ContextGenerator
+						</annotationProcessor>
 					</annotationProcessors>
 				</configuration>
 			</plugin>
