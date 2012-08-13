@@ -5,7 +5,9 @@ The idea comes from Linq to SQL in .Net.
 Here is an example what this might look like:
 
 ```java
-final UserContext context = from (User.class);
+final UserContext context = DataContext.from (User.class);
+// This could also be written as
+// final UserContext context = ContextFactory.newInstance(User.class, UserContext.class);
 
 final Enumerable<User> userEnumerable = from (User.class)
 		.whereEmailAddress ("jordansjones@gmail.com")
