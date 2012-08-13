@@ -9,7 +9,7 @@ final UserContext context = from (User.class);
 
 final Enumerable<User> userEnumerable = from (User.class)
 		.whereEmailAddress ("jordansjones@gmail.com")
-		.or ().whereEmailAddress ("jordan.jones@quest.com")
+		.or ().whereEmailAddress ("email@domain.net")
 		.select (User.class);
 
 userEnumerable.count ();
