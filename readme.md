@@ -12,7 +12,7 @@ final Enumerable<User> userEnumerable = from (User.class)
 		.or ().whereEmailAddress ("email@domain.net")
 		.select (User.class);
 
-userEnumerable.count ();
+final int totalUsers = userEnumerable.count ();
 final User[] users = userEnumerable.toArray ();
 ```
 
